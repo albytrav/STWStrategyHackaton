@@ -1,0 +1,67 @@
+=== Loading Fastr execution script  ===
+Using python 3.7.3 (default, Apr 24 2019, 10:44:57) 
+[GCC 5.4.0 20160609] loaded from /home/martijn/Documents/WORC312/bin/python
+[WARNING]  __init__:0078 >> Not running in a production installation (branch "develop" from source code)
+[INFO] executionscript:0146 >> ----- Execution script -----
+
+[INFO] executionscript:0158 >> Loading pickled command from file
+[INFO] executionscript:0162 >> Finished loading pickle in 0.046212 seconds
+[INFO] executionscript:0174 >> Received command: <SourceJob
+  id=WORC_Example_Lung___features_train_CT0___Lung-LUNG1-118GTV-1
+  tmpdir=vfs://home/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/>
+
+[INFO] executionscript:0055 >> Using Python 3.7.3 (default, Apr 24 2019, 10:44:57) 
+[GCC 5.4.0 20160609]
+[INFO] executionscript:0056 >> FASTR loaded from /home/martijn/Documents/WORC312/src/fastr/fastr/__init__.py
+[INFO] executionscript:0057 >> version: 3.1.4_develop_8c7db39
+[INFO] executionscript:0058 >> Start time: 2019-12-09 10:08:57.215466
+[INFO] executionscript:0061 >> Job log path: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/__fastr_result__.pickle.gz
+[INFO] executionscript:0063 >> Running job WORC_Example_Lung___features_train_CT0___Lung-LUNG1-118GTV-1
+  command: fastr/Source:1.0 v1.0
+  arguments: {'input': ('file:///tmp/Radiomix_features/Lung-LUNG1-118GTV-1/features.hdf5',), 'datatype': (<String: 'HDF5'>,), 'sample_id': (<String: 'Lung-LUNG1-118GTV-1'>,), 'targetdir': (<Directory: 'vfs://home/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result'>,)}
+  outputs: {'output': {'id': 'output', 'cardinality': 'any', 'datatype': 'HDF5', 'requested': True}}
+
+[INFO] executionscript:0073 >> No old result, executing job
+[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py
+FastrOptionalModuleNotAvailableError from /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py line 46: Could not import the required elasticsearch for this plugin
+[INFO] executionscript:0082 >> DRMAA info: {'jobid': None, 'taskid': None, 'jobname': None}
+[INFO] executionscript:0084 >> Writing intermediate job info to: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/__fastr_result__.pickle.gz
+[INFO]       job:0663 >> Set current directory to job output dir /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1
+[INFO]       job:0678 >> Start executing tool
+[INFO]       job:0682 >> Finished creating payload in 0.000164 seconds
+[INFO]       job:0685 >> Start executing tool
+[INFO] localbinarytarget:0154 >> Changing ../../utils/cmd/
+[INFO]      tool:0387 >> Target is <Plugin: LocalBinaryTarget>
+[INFO]      tool:0396 >> Using payload: {'inputs': {'input': ('file:///tmp/Radiomix_features/Lung-LUNG1-118GTV-1/features.hdf5',), 'datatype': (<String: 'HDF5'>,), 'sample_id': (<String: 'Lung-LUNG1-118GTV-1'>,), 'targetdir': (<Directory: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result'>,)}, 'outputs': {'output': (<Boolean: True>,)}}
+[INFO] localbinarytarget:0202 >> Adding extra PATH: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd']
+[INFO] fastrinterface:0470 >> Execution payload: {'inputs': {'input': ('file:///tmp/Radiomix_features/Lung-LUNG1-118GTV-1/features.hdf5',), 'datatype': (<String: 'HDF5'>,), 'sample_id': (<String: 'Lung-LUNG1-118GTV-1'>,), 'targetdir': (<Directory: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result'>,)}, 'outputs': {'output': (<Boolean: True>,)}}
+[INFO] fastrinterface:0567 >> Adding ('file:///tmp/Radiomix_features/Lung-LUNG1-118GTV-1/features.hdf5',) to argument list based on <fastrinterface.InputParameterDescription object at 0x7fa072aa75f8>
+[INFO] fastrinterface:0567 >> Adding (<String: 'HDF5'>,) to argument list based on <fastrinterface.InputParameterDescription object at 0x7fa06ec2b710>
+[INFO] fastrinterface:0567 >> Adding (<Directory: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result'>,) to argument list based on <fastrinterface.InputParameterDescription object at 0x7fa06ec2b940>
+[INFO] fastrinterface:0567 >> Adding (<String: 'Lung-LUNG1-118GTV-1'>,) to argument list based on <fastrinterface.InputParameterDescription object at 0x7fa06ec2b588>
+[INFO] fastrinterface:0567 >> Adding (<Boolean: True>,) to argument list based on <fastrinterface.OutputParameterDescription object at 0x7fa06ec2b6a0>
+[INFO] localbinarytarget:0261 >> Options: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd']
+[INFO]    target:0184 >> Calling command arguments: ['/home/martijn/Documents/WORC312/bin/python', '/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd/source.py', '--input', 'file:///tmp/Radiomix_features/Lung-LUNG1-118GTV-1/features.hdf5', '--datatype', 'HDF5', '--output', '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result', '--sample_id', 'Lung-LUNG1-118GTV-1']
+[INFO]    target:0188 >> Calling command: /home/martijn/Documents/WORC312/bin/python /home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd/source.py --input file:///tmp/Radiomix_features/Lung-LUNG1-118GTV-1/features.hdf5 --datatype HDF5 --output /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result --sample_id Lung-LUNG1-118GTV-1
+[INFO] fastrinterface:0477 >> Collecting results
+[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/targetplugins/singularitytarget.py
+Could not find executable "singularity" on PATH: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd', '/home/martijn/Documents/WORC312/bin', '/home/martijn/miniconda2/bin', '/home/martijn/miniconda/bin', '/hoem/martijn/apps/elastix/bin', '/home/martijn/bin', '/home/martijn/.local/bin', '/opt/texbin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin']
+[INFO] jsoncollector:0076 >> Setting data for output with {"Lung-LUNG1-118GTV-1": ["/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result/features.hdf5"]}
+[INFO] fastrinterface:0588 >> Collected automatic result for output
+[INFO] fastrinterface:0589 >> {'Lung-LUNG1-118GTV-1': ['/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result/features.hdf5']}
+[INFO]       job:0689 >> Finished executing tool in 2.171618 seconds
+[INFO]       job:0709 >> Start translating results tool
+[INFO]       job:0803 >> Trying to cast /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result/features.hdf5 to one of (<URLType: HDF5 class [Loaded]>,)
+[INFO]       job:0808 >> Successfully cast to <HDF5: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result/features.hdf5'>
+[INFO]       job:0713 >> Finished translating results in 0.001168 seconds
+[INFO]       job:0719 >> Resetting current directory to /home/martijn/git/STWStrategyHackaton/WORCRadiomix
+[INFO]       job:1048 >> Data for output output is valid
+[INFO] executionscript:0090 >> Job subprocess finished
+[INFO] executionscript:0093 >> Start hashing results
+[INFO] executionscript:0097 >> Finished hashing results in 0.0076 seconds
+[INFO] executionscript:0098 >> try end time: 2019-12-09 10:09:00.244168
+[INFO] executionscript:0121 >> Execution finished normally.
+[INFO] executionscript:0124 >> Writing job result to: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/__fastr_result__.pickle.gz
+[INFO] executionscript:0133 >> End time: 2019-12-09 10:09:00.258339
+[INFO] executionscript:0181 >> ---------------------------
+

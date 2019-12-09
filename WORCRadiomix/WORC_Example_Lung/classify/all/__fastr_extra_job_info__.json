@@ -1,0 +1,1621 @@
+{
+  "id": "WORC_Example_Lung___classify___all",
+  "hostinfo": {
+    "os": {
+      "system": "Linux",
+      "is64bits": 1,
+      "maxsize": 9223372036854775807,
+      "version": {
+        "distname": "debian",
+        "version": "stretch/sid",
+        "id": "",
+        "libc": {
+          "libname": "glibc",
+          "version": "2.17"
+        }
+      }
+    },
+    "uname": [
+      "Linux",
+      "martijn-HP-EliteDesk-800-G2-SFF",
+      "4.4.0-170-generic",
+      "#199-Ubuntu SMP Thu Nov 14 01:45:04 UTC 2019",
+      "x86_64",
+      "x86_64"
+    ],
+    "username": "martijn",
+    "cwd": "/home/martijn/git/STWStrategyHackaton/WORCRadiomix",
+    "python": {
+      "version": "3.7.3",
+      "branch": "",
+      "compiler": "GCC 5.4.0 20160609",
+      "implementation": "CPython",
+      "revision": ""
+    },
+    "envvar": {
+      "XDG_VTNR": "7",
+      "LC_PAPER": "nl_NL.UTF-8",
+      "LC_ADDRESS": "nl_NL.UTF-8",
+      "XDG_SESSION_ID": "c2",
+      "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/martijn",
+      "LC_MONETARY": "nl_NL.UTF-8",
+      "CLUTTER_IM_MODULE": "xim",
+      "GPG_AGENT_INFO": "/home/martijn/.gnupg/S.gpg-agent:0:1",
+      "GUACAMOLE_HOME": "/home/martijn/apps/guacamolehome",
+      "TERM": "xterm-256color",
+      "VTE_VERSION": "4205",
+      "SHELL": "/bin/bash",
+      "CATALINA_HOME": "/usr/share/tomcat7",
+      "DERBY_HOME": "/usr/lib/jvm/java-8-oracle/db",
+      "QT_LINUX_ACCESSIBILITY_ALWAYS_ON": "1",
+      "WINDOWID": "98566531",
+      "LC_NUMERIC": "nl_NL.UTF-8",
+      "OLDPWD": "/home/martijn/git",
+      "UPSTART_SESSION": "unix:abstract=/com/ubuntu/upstart-session/1000/1497",
+      "GNOME_KEYRING_CONTROL": "",
+      "GTK_MODULES": "gail:atk-bridge:unity-gtk-module",
+      "USER": "martijn",
+      "JRE_HOME": "/usr/lib/jvm/java-8-oracle/jre",
+      "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+      "LC_TELEPHONE": "nl_NL.UTF-8",
+      "QT_ACCESSIBILITY": "1",
+      "LD_LIBRARY_PATH": "/home/martijn/apps/dip/Linuxa64/lib/::/home/martijn/apps/dip/Linuxa64/lib:/home/martijn/apps/elastix/lib",
+      "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+      "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+      "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+      "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+      "VIRTUAL_ENV": "/home/martijn/Documents/WORC312",
+      "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg",
+      "DESKTOP_SESSION": "ubuntu",
+      "PATH": "/home/martijn/Documents/WORC312/bin:/home/martijn/miniconda2/bin:/home/martijn/miniconda/bin:/hoem/martijn/apps/elastix/bin:/home/martijn/bin:/home/martijn/.local/bin:/opt/texbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin",
+      "QT_IM_MODULE": "ibus",
+      "QT_QPA_PLATFORMTHEME": "appmenu-qt5",
+      "LC_IDENTIFICATION": "nl_NL.UTF-8",
+      "XDG_SESSION_TYPE": "x11",
+      "PWD": "/home/martijn/git/STWStrategyHackaton/WORCRadiomix",
+      "JOB": "gnome-session",
+      "XMODIFIERS": "@im=ibus",
+      "JAVA_HOME": "/usr/lib/jvm/java-8-oracle",
+      "GNOME_KEYRING_PID": "",
+      "LANG": "en_US.UTF-8",
+      "GDM_LANG": "en_US",
+      "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+      "LC_MEASUREMENT": "nl_NL.UTF-8",
+      "COMPIZ_CONFIG_PROFILE": "ubuntu",
+      "IM_CONFIG_PHASE": "1",
+      "PS1": "(WORC312) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ ",
+      "GDMSESSION": "ubuntu",
+      "SESSIONTYPE": "gnome-session",
+      "GTK2_MODULES": "overlay-scrollbar",
+      "SHLVL": "1",
+      "HOME": "/home/martijn",
+      "XDG_SEAT": "seat0",
+      "LANGUAGE": "en_US",
+      "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+      "UPSTART_INSTANCE": "",
+      "PYTHONPATH": ":/home/martijn/git/PySNAP:/home/taskman/taskmanager/taskmanager/taskmanager:/home/taskman/taskmanager/taskmanager/taskmanager:/home/martijn/git/Taskclient:/home/martijn/git/RadTools:/media/martijn/DATA/Software/caffe-master/python:/home/martijn/git/DicomSorter:/home/martijn/git/XNATExplorer:/home/martijn/git/imgaug:/home/martijn/git/phasepack:/home/martijn/git/PREDICTFastr/PREDICT:/home/martijn/git/DicomSorter",
+      "UPSTART_EVENTS": "started starting",
+      "XDG_SESSION_DESKTOP": "ubuntu",
+      "LOGNAME": "martijn",
+      "DBUS_SESSION_BUS_ADDRESS": "unix:abstract=/tmp/dbus-4zHnmvJLFG",
+      "J2SDKDIR": "/usr/lib/jvm/java-8-oracle",
+      "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop",
+      "QT4_IM_MODULE": "xim",
+      "LESSOPEN": "| /usr/bin/lesspipe %s",
+      "INSTANCE": "Unity",
+      "UPSTART_JOB": "unity-settings-daemon",
+      "XDG_RUNTIME_DIR": "/run/user/1000",
+      "DISPLAY": ":0",
+      "XDG_CURRENT_DESKTOP": "Unity",
+      "GTK_IM_MODULE": "ibus",
+      "J2REDIR": "/usr/lib/jvm/java-8-oracle/jre",
+      "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+      "LC_TIME": "nl_NL.UTF-8",
+      "LC_NAME": "nl_NL.UTF-8",
+      "XAUTHORITY": "/home/martijn/.Xauthority",
+      "_": "/home/martijn/Documents/WORC312/bin/python",
+      "KMP_INIT_AT_FORK": "FALSE"
+    },
+    "drmaa": {
+      "jobid": null,
+      "taskid": null,
+      "jobname": null
+    }
+  },
+  "sysinfo_start": {
+    "cpu_usage": {
+      "user": 17242.44,
+      "nice": 72.67,
+      "system": 6625.24,
+      "idle": 2579839.51,
+      "iowait": 7329.03,
+      "irq": 0.0,
+      "softirq": 138.39,
+      "steal": 0.0,
+      "guest": 0.0,
+      "guest_nice": 0.0,
+      "percent": 17.8
+    },
+    "memory_usage": {
+      "virtual": {
+        "total": 16701427712,
+        "available": 6414774272,
+        "percent": 61.6,
+        "used": 8326967296,
+        "free": 349704192,
+        "active": 10478899200,
+        "inactive": 4868280320,
+        "buffers": 1692262400,
+        "cached": 6332493824,
+        "shared": 1613287424,
+        "slab": 676143104
+      },
+      "swap": {
+        "total": 17052987392,
+        "used": 120258560,
+        "free": 16932728832,
+        "percent": 0.7,
+        "sin": 45920256,
+        "sout": 225763328
+      }
+    },
+    "mounts": [
+      {
+        "device": "/dev/sda1",
+        "mountpoint": "/",
+        "fstype": "ext4",
+        "opts": "rw,relatime,errors=remount-ro,data=ordered",
+        "disk_total": 49080274944,
+        "disk_used": 34656161792,
+        "disk_free": 11907338240,
+        "disk_use_percent": 74.4
+      },
+      {
+        "device": "/dev/sda6",
+        "mountpoint": "/home",
+        "fstype": "ext4",
+        "opts": "rw,relatime,data=ordered",
+        "disk_total": 185904377856,
+        "disk_used": 76666601472,
+        "disk_free": 99770707968,
+        "disk_use_percent": 43.5
+      },
+      {
+        "device": "/dev/sda1",
+        "mountpoint": "/var/lib/docker/aufs",
+        "fstype": "ext4",
+        "opts": "rw,relatime,errors=remount-ro,data=ordered",
+        "disk_total": 49080274944,
+        "disk_used": 34656161792,
+        "disk_free": 11907338240,
+        "disk_use_percent": 74.4
+      },
+      {
+        "device": "/dev/sdc1",
+        "mountpoint": "/media/martijn/DATA",
+        "fstype": "fuseblk",
+        "opts": "rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096",
+        "disk_total": 2000396996608,
+        "disk_used": 1920098758656,
+        "disk_free": 80298237952,
+        "disk_use_percent": 96.0
+      }
+    ],
+    "users": [
+      {
+        "name": "martijn",
+        "terminal": "tty7",
+        "host": "localhost",
+        "started": 1575555456.0,
+        "pid": 1497
+      }
+    ]
+  },
+  "process": {
+    "return_code": 0,
+    "stdout": "[WARNING]  __init__:0078 >> Not running in a production installation (branch \"develop\" from source code)\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/phasepack/tools.py:14: UserWarning: \nModule 'pyfftw' (FFTW Python bindings) could not be imported. To install it, try\nrunning 'pip install pyfftw' from the terminal. Falling back on the slower\n'fftpack' module for 2D Fourier transforms.\n  'fftpack' module for 2D Fourier transforms.\"\"\")\n\nLabel names to extract: ['2ysurv']\nLabels:\n[[[1.]\n  [0.]\n  [0.]\n  [1.]\n  [0.]\n  [0.]\n  [0.]\n  [1.]\n  [0.]\n  [0.]\n  [1.]\n  [0.]\n  [0.]\n  [1.]\n  [1.]\n  [0.]\n  [1.]\n  [1.]\n  [0.]\n  [0.]\n  [0.]\n  [1.]\n  [0.]\n  [0.]\n  [0.]\n  [1.]\n  [0.]\n  [1.]\n  [1.]\n  [1.]\n  [1.]\n  [0.]\n  [0.]\n  [0.]\n  [0.]\n  [1.]\n  [1.]\n  [0.]\n  [0.]\n  [1.]\n  [0.]\n  [1.]\n  [0.]\n  [0.]\n  [1.]\n  [0.]\n  [1.]\n  [0.]\n  [0.]\n  [1.]]]\nTotal of 50 patients\n21.0 positives, 29.0 negatives\nLogging to file /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/classify/all/classifier.log\nPerforming Single class classification.\nCross validation iteration 1 / 3 .\nFit: 1000\nFitting 2 folds for each of 1000 candidates, totalling 2000 fits.\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Source Data Iteration 0'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/pandas/core/generic.py:2530: PerformanceWarning: \nyour performance may suffer as PyTables will pickle object types that it cannot\nmap directly to c-types [inferred_type->mixed,key->values] [items->None]\n\n  pytables.to_hdf(path_or_buf, key, self, **kwargs)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Source Data Iteration 1'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Estimator Data'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py\nFastrOptionalModuleNotAvailableError from /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py line 46: Could not import the required elasticsearch for this plugin\n[INFO] networkrun:0517 >> ####################################\n[INFO] networkrun:0518 >> #     network execution STARTED    #\n[INFO] networkrun:0519 >> ####################################\n[INFO] networkrun:0544 >> Running network via /home/martijn/Documents/WORC312/src/fastr/fastr/api/__init__.py (last modified Fri Dec  6 15:37:34 2019)\n[INFO] networkrun:0545 >> FASTR loaded from /home/martijn/Documents/WORC312/src/fastr/fastr\n[INFO] networkrun:0561 >> Network run tmpdir: /tmp/GS/6DQYBMWFIR/tmp\n[INFO] networkchunker:0146 >> Adding output to candidates (blocking False)\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/estimator_source sample id <SampleId ('id_0',)>, index <SampleIndex (0)>\n[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/targetplugins/singularitytarget.py\nCould not find executable \"singularity\" on PATH: ['/home/martijn/Documents/WORC312/lib/python3.7/site-packages/WORC-3.1.2-py3.7.egg/WORC/resources/fastr_tools/worc/bin', '/home/martijn/Documents/WORC312/bin', '/home/martijn/miniconda2/bin', '/home/martijn/miniconda/bin', '/hoem/martijn/apps/elastix/bin', '/home/martijn/bin', '/home/martijn/.local/bin', '/opt/texbin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin']\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/traintest sample id <SampleId ('0',)>, index <SampleIndex (0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/traintest sample id <SampleId ('1',)>, index <SampleIndex (1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/parameters sample id <SampleId ('0',)>, index <SampleIndex (0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/parameters sample id <SampleId ('1',)>, index <SampleIndex (1)>\n[INFO] networkrun:0620 >> Waiting for execution to finish...\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___estimator_source___id_0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___traintest___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___traintest___1 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___parameters___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___parameters___1 with status JobState.finished\n[INFO] networkrun:0649 >> Chunk execution finished!\n[INFO]   noderun:0470 >> Generating jobs for node \"fitandscore\" with dimensions: [estimator_source: 1], [traintest: 2], [parameters: 2]\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/fitandscore sample id <SampleId ('id_0', '0', '0')>, index <SampleIndex (0, 0, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/fitandscore sample id <SampleId ('id_0', '0', '1')>, index <SampleIndex (0, 0, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/fitandscore sample id <SampleId ('id_0', '1', '0')>, index <SampleIndex (0, 1, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/fitandscore sample id <SampleId ('id_0', '1', '1')>, index <SampleIndex (0, 1, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/output sample id <SampleId ('id_0', '0', '0')>, index <SampleIndex (0, 0, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/output sample id <SampleId ('id_0', '0', '1')>, index <SampleIndex (0, 0, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/output sample id <SampleId ('id_0', '1', '0')>, index <SampleIndex (0, 1, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_6DQYBMWFIR/0.0/runs/WORC_GridSearch_6DQYBMWFIR_2019-12-09T10-10-44/nodelist/output sample id <SampleId ('id_0', '1', '1')>, index <SampleIndex (0, 1, 1)>\n[INFO] networkrun:0620 >> Waiting for execution to finish...\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___fitandscore___id_0__0__0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___fitandscore___id_0__0__1 with status JobState.finished\n[INFO] networkrun:0631 >> Waiting for 6 jobs:\n[INFO] networkrun:0634 >> WORC_GridSearch_6DQYBMWFIR___fitandscore___id_0__1__0: JobState.running\n[INFO] networkrun:0634 >> WORC_GridSearch_6DQYBMWFIR___fitandscore___id_0__1__1: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_6DQYBMWFIR___output___id_0__0__0___0: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_6DQYBMWFIR___output___id_0__0__1___0: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_6DQYBMWFIR___output___id_0__1__0___0: JobState.hold\n[INFO] networkrun:0634 >> WORC_GridSearch_6DQYBMWFIR___output___id_0__1__1___0: JobState.hold\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___fitandscore___id_0__1__0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___fitandscore___id_0__1__1 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___output___id_0__0__0___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___output___id_0__0__1___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___output___id_0__1__0___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_6DQYBMWFIR___output___id_0__1__1___0 with status JobState.finished\n[INFO] networkrun:0649 >> Chunk execution finished!\n[INFO] executionplugin:0518 >> Callback processing thread for LinearExecution ended!\n[INFO] networkrun:0651 >> ####################################\n[INFO] networkrun:0652 >> #    network execution FINISHED    #\n[INFO] networkrun:0653 >> ####################################\n[INFO] simplereport:0026 >> ===== RESULTS =====\n[INFO] simplereport:0035 >> output: 4 success / 0 failed\n[INFO] simplereport:0036 >> ===================\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/WORC-3.1.2-py3.7.egg/WORC/classification/SearchCV.py:665: RuntimeWarning: invalid value encountered in subtract\n  array_means[:, np.newaxis]) ** 2,\n\n\n\n#######################################\nStarting fit and score of new workflow.\nFitting scaler and transforming features.\nImputing NaN with constant.\nSelecting groups of features.\nOriginal Length: 3690\nNew Length: 69\nSelecting features based on variance.\nOriginal Length: 69\nNew Length: 67\nFitting ML.\nBest found parameters:\nCNB_alpha: 0.35010697500552657.\nElasticNet_alpha: 0.006249801964509968.\nElasticNet_l1_ratio: 0.4244777879129551.\nFeatsel_Variance: True.\nFeatureScaling: z_score.\nImputation: True.\nImputationMethod: constant.\nImputationNeighbours: 5.\nLDA_shrinkage: 0.0007205129425193635.\nLDA_solver: lsqr.\nLRC: 0.7729704697598195.\nLRpenalty: l2.\nPCAType: 95variance.\nQDA_reg_param: 0.05351389383633242.\nRFmax_depth: 9.\nRFmin_samples_split: 3.\nRFn_estimators: 91.\nReliefDistanceP: 2.\nReliefNN: 5.\nReliefNumFeatures: 120.\nReliefSampleSize: 1.\nReliefUse: False.\nSGD_alpha: 0.0004291563938792032.\nSGD_l1_ratio: 0.07623026765003371.\nSGD_loss: modified_huber.\nSGD_penalty: l1.\nSVMC: 8092.036506331872.\nSVMKernel: poly.\nSVMcoef0: 0.026086104053744674.\nSVMdegree: 2.929140494735414.\nSVMgamma: 0.015692495859235545.\nSampleProcessing_Oversampling: False.\nSampleProcessing_SMOTE: False.\nSampleProcessing_SMOTE_n_cores: 4.\nSampleProcessing_SMOTE_neighbors: 7.\nSampleProcessing_SMOTE_ratio: 1.0.\nSelectFromModel: False.\nSelectGroups: True.\nStatisticalTestMetric: MannWhitneyU.\nStatisticalTestThreshold: 0.017474444826396762.\nStatisticalTestUse: False.\nUsePCA: False.\nclassifiers: SVM.\ncoliage_features: False.\nfractal_features: False.\nhistogram_features: True.\nlocation_features: False.\nlog_features: False.\nmax_iter: 100000.\norientation_features: True.\npatient_features: False.\nphase_features: False.\nrgrd_features: False.\nsemantic_features: False.\nshape_features: True.\ntexture_gabor_features: False.\ntexture_glcm_features: False.\ntexture_glcmms_features: False.\ntexture_gldzm_features: True.\ntexture_glrlm_features: True.\ntexture_glszm_features: True.\ntexture_lbp_features: False.\ntexture_ngldm_features: False.\ntexture_ngtdm_features: True.\nvessel_features: False.\nwavelet_features: False.\nNumber: 214.\n\n Best score using best parameters:\n0.9142857142857143\nCreating ensemble using top 1 individual classifiers.\nRefitting estimator 1 / 1.\n\n\nCross validation iteration 2 / 3 .\nFit: 1000\nFitting 2 folds for each of 1000 candidates, totalling 2000 fits.\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Source Data Iteration 0'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/pandas/core/generic.py:2530: PerformanceWarning: \nyour performance may suffer as PyTables will pickle object types that it cannot\nmap directly to c-types [inferred_type->mixed,key->values] [items->None]\n\n  pytables.to_hdf(path_or_buf, key, self, **kwargs)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Source Data Iteration 1'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Estimator Data'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[INFO] networkrun:0517 >> ####################################\n[INFO] networkrun:0518 >> #     network execution STARTED    #\n[INFO] networkrun:0519 >> ####################################\n[INFO] networkrun:0544 >> Running network via /home/martijn/Documents/WORC312/src/fastr/fastr/api/__init__.py (last modified Fri Dec  6 15:37:34 2019)\n[INFO] networkrun:0545 >> FASTR loaded from /home/martijn/Documents/WORC312/src/fastr/fastr\n[INFO] networkrun:0561 >> Network run tmpdir: /tmp/GS/591NP8QLZL/tmp\n[INFO] networkchunker:0146 >> Adding output to candidates (blocking False)\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/estimator_source sample id <SampleId ('id_0',)>, index <SampleIndex (0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/traintest sample id <SampleId ('0',)>, index <SampleIndex (0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/traintest sample id <SampleId ('1',)>, index <SampleIndex (1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/parameters sample id <SampleId ('0',)>, index <SampleIndex (0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/parameters sample id <SampleId ('1',)>, index <SampleIndex (1)>\n[INFO] networkrun:0620 >> Waiting for execution to finish...\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___estimator_source___id_0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___traintest___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___traintest___1 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___parameters___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___parameters___1 with status JobState.finished\n[INFO] networkrun:0649 >> Chunk execution finished!\n[INFO]   noderun:0470 >> Generating jobs for node \"fitandscore\" with dimensions: [estimator_source: 1], [traintest: 2], [parameters: 2]\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/fitandscore sample id <SampleId ('id_0', '0', '0')>, index <SampleIndex (0, 0, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/fitandscore sample id <SampleId ('id_0', '0', '1')>, index <SampleIndex (0, 0, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/fitandscore sample id <SampleId ('id_0', '1', '0')>, index <SampleIndex (0, 1, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/fitandscore sample id <SampleId ('id_0', '1', '1')>, index <SampleIndex (0, 1, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/output sample id <SampleId ('id_0', '0', '0')>, index <SampleIndex (0, 0, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/output sample id <SampleId ('id_0', '0', '1')>, index <SampleIndex (0, 0, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/output sample id <SampleId ('id_0', '1', '0')>, index <SampleIndex (0, 1, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_591NP8QLZL/0.0/runs/WORC_GridSearch_591NP8QLZL_2019-12-09T10-26-57/nodelist/output sample id <SampleId ('id_0', '1', '1')>, index <SampleIndex (0, 1, 1)>\n[INFO] networkrun:0620 >> Waiting for execution to finish...\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___fitandscore___id_0__0__0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___fitandscore___id_0__0__1 with status JobState.finished\n[INFO] networkrun:0631 >> Waiting for 6 jobs:\n[INFO] networkrun:0634 >> WORC_GridSearch_591NP8QLZL___fitandscore___id_0__1__0: JobState.running\n[INFO] networkrun:0634 >> WORC_GridSearch_591NP8QLZL___fitandscore___id_0__1__1: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_591NP8QLZL___output___id_0__0__0___0: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_591NP8QLZL___output___id_0__0__1___0: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_591NP8QLZL___output___id_0__1__0___0: JobState.hold\n[INFO] networkrun:0634 >> WORC_GridSearch_591NP8QLZL___output___id_0__1__1___0: JobState.hold\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___fitandscore___id_0__1__0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___fitandscore___id_0__1__1 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___output___id_0__0__0___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___output___id_0__0__1___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___output___id_0__1__0___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_591NP8QLZL___output___id_0__1__1___0 with status JobState.finished\n[INFO] networkrun:0649 >> Chunk execution finished!\n[INFO] executionplugin:0518 >> Callback processing thread for LinearExecution ended!\n[INFO] networkrun:0651 >> ####################################\n[INFO] networkrun:0652 >> #    network execution FINISHED    #\n[INFO] networkrun:0653 >> ####################################\n[INFO] simplereport:0026 >> ===== RESULTS =====\n[INFO] simplereport:0035 >> output: 4 success / 0 failed\n[INFO] simplereport:0036 >> ===================\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/WORC-3.1.2-py3.7.egg/WORC/classification/SearchCV.py:665: RuntimeWarning: invalid value encountered in subtract\n  array_means[:, np.newaxis]) ** 2,\n\n\n\n#######################################\nStarting fit and score of new workflow.\nFitting scaler and transforming features.\nImputing NaN with constant.\nSelecting groups of features.\nOriginal Length: 3690\nNew Length: 45\nSelecting features based on variance.\nOriginal Length: 45\nNew Length: 44\nFitting ML.\nBest found parameters:\nCNB_alpha: 0.8552219064284123.\nElasticNet_alpha: 3.506134443922414e-05.\nElasticNet_l1_ratio: 0.08550887427079834.\nFeatsel_Variance: True.\nFeatureScaling: z_score.\nImputation: True.\nImputationMethod: constant.\nImputationNeighbours: 5.\nLDA_shrinkage: 0.00011641751656573247.\nLDA_solver: lsqr.\nLRC: 0.6683232933342413.\nLRpenalty: l1.\nPCAType: 95variance.\nQDA_reg_param: 2.091455808062238e-05.\nRFmax_depth: 6.\nRFmin_samples_split: 2.\nRFn_estimators: 23.\nReliefDistanceP: 3.\nReliefNN: 5.\nReliefNumFeatures: 150.\nReliefSampleSize: 1.\nReliefUse: False.\nSGD_alpha: 0.0003783106849705423.\nSGD_l1_ratio: 0.9091622173388735.\nSGD_loss: hinge.\nSGD_penalty: none.\nSVMC: 33.413239962749735.\nSVMKernel: poly.\nSVMcoef0: 0.995450820913259.\nSVMdegree: 5.723762744208161.\nSVMgamma: 0.019420207107070535.\nSampleProcessing_Oversampling: False.\nSampleProcessing_SMOTE: False.\nSampleProcessing_SMOTE_n_cores: 4.\nSampleProcessing_SMOTE_neighbors: 11.\nSampleProcessing_SMOTE_ratio: 1.0.\nSelectFromModel: False.\nSelectGroups: True.\nStatisticalTestMetric: MannWhitneyU.\nStatisticalTestThreshold: 0.07824643344199177.\nStatisticalTestUse: False.\nUsePCA: False.\nclassifiers: SVM.\ncoliage_features: False.\nfractal_features: False.\nhistogram_features: True.\nlocation_features: False.\nlog_features: False.\nmax_iter: 100000.\norientation_features: False.\npatient_features: False.\nphase_features: False.\nrgrd_features: False.\nsemantic_features: False.\nshape_features: False.\ntexture_gabor_features: False.\ntexture_glcm_features: False.\ntexture_glcmms_features: False.\ntexture_gldzm_features: True.\ntexture_glrlm_features: False.\ntexture_glszm_features: False.\ntexture_lbp_features: True.\ntexture_ngldm_features: True.\ntexture_ngtdm_features: True.\nvessel_features: False.\nwavelet_features: False.\nNumber: 770.\n\n Best score using best parameters:\n0.7476190476190476\nCreating ensemble using top 1 individual classifiers.\nRefitting estimator 1 / 1.\n\n\nCross validation iteration 3 / 3 .\nFit: 1000\nFitting 2 folds for each of 1000 candidates, totalling 2000 fits.\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Source Data Iteration 0'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/pandas/core/generic.py:2530: PerformanceWarning: \nyour performance may suffer as PyTables will pickle object types that it cannot\nmap directly to c-types [inferred_type->mixed,key->values] [items->None]\n\n  pytables.to_hdf(path_or_buf, key, self, **kwargs)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Source Data Iteration 1'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/tables/path.py:155: NaturalNameWarning: object name is not a valid Python identifier: 'Estimator Data'; it does not match the pattern ``^[a-zA-Z_][a-zA-Z0-9_]*$``; you will not be able to use natural naming to access this object; using ``getattr()`` will still work, though\n  check_attribute_name(name)\n\n[INFO] networkrun:0517 >> ####################################\n[INFO] networkrun:0518 >> #     network execution STARTED    #\n[INFO] networkrun:0519 >> ####################################\n[INFO] networkrun:0544 >> Running network via /home/martijn/Documents/WORC312/src/fastr/fastr/api/__init__.py (last modified Fri Dec  6 15:37:34 2019)\n[INFO] networkrun:0545 >> FASTR loaded from /home/martijn/Documents/WORC312/src/fastr/fastr\n[INFO] networkrun:0561 >> Network run tmpdir: /tmp/GS/CJG3YK5A7S/tmp\n[INFO] networkchunker:0146 >> Adding output to candidates (blocking False)\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/estimator_source sample id <SampleId ('id_0',)>, index <SampleIndex (0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/traintest sample id <SampleId ('0',)>, index <SampleIndex (0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/traintest sample id <SampleId ('1',)>, index <SampleIndex (1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/parameters sample id <SampleId ('0',)>, index <SampleIndex (0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/parameters sample id <SampleId ('1',)>, index <SampleIndex (1)>\n[INFO] networkrun:0620 >> Waiting for execution to finish...\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___estimator_source___id_0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___traintest___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___traintest___1 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___parameters___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___parameters___1 with status JobState.finished\n[INFO] networkrun:0649 >> Chunk execution finished!\n[INFO]   noderun:0470 >> Generating jobs for node \"fitandscore\" with dimensions: [estimator_source: 1], [traintest: 2], [parameters: 2]\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/fitandscore sample id <SampleId ('id_0', '0', '0')>, index <SampleIndex (0, 0, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/fitandscore sample id <SampleId ('id_0', '0', '1')>, index <SampleIndex (0, 0, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/fitandscore sample id <SampleId ('id_0', '1', '0')>, index <SampleIndex (0, 1, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/fitandscore sample id <SampleId ('id_0', '1', '1')>, index <SampleIndex (0, 1, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/output sample id <SampleId ('id_0', '0', '0')>, index <SampleIndex (0, 0, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/output sample id <SampleId ('id_0', '0', '1')>, index <SampleIndex (0, 0, 1)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/output sample id <SampleId ('id_0', '1', '0')>, index <SampleIndex (0, 1, 0)>\n[INFO]   noderun:0576 >> Creating job for node fastr:///networks/WORC_GridSearch_CJG3YK5A7S/0.0/runs/WORC_GridSearch_CJG3YK5A7S_2019-12-09T10-42-48/nodelist/output sample id <SampleId ('id_0', '1', '1')>, index <SampleIndex (0, 1, 1)>\n[INFO] networkrun:0620 >> Waiting for execution to finish...\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___fitandscore___id_0__0__0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___fitandscore___id_0__0__1 with status JobState.finished\n[INFO] networkrun:0631 >> Waiting for 6 jobs:\n[INFO] networkrun:0634 >> WORC_GridSearch_CJG3YK5A7S___fitandscore___id_0__1__0: JobState.running\n[INFO] networkrun:0634 >> WORC_GridSearch_CJG3YK5A7S___fitandscore___id_0__1__1: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_CJG3YK5A7S___output___id_0__0__0___0: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_CJG3YK5A7S___output___id_0__0__1___0: JobState.queued\n[INFO] networkrun:0634 >> WORC_GridSearch_CJG3YK5A7S___output___id_0__1__0___0: JobState.hold\n[INFO] networkrun:0634 >> WORC_GridSearch_CJG3YK5A7S___output___id_0__1__1___0: JobState.hold\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___fitandscore___id_0__1__0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___fitandscore___id_0__1__1 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___output___id_0__0__0___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___output___id_0__0__1___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___output___id_0__1__0___0 with status JobState.finished\n[INFO] networkrun:0765 >> Finished job WORC_GridSearch_CJG3YK5A7S___output___id_0__1__1___0 with status JobState.finished\n[INFO] networkrun:0649 >> Chunk execution finished!\n[INFO] executionplugin:0518 >> Callback processing thread for LinearExecution ended!\n[INFO] networkrun:0651 >> ####################################\n[INFO] networkrun:0652 >> #    network execution FINISHED    #\n[INFO] networkrun:0653 >> ####################################\n[INFO] simplereport:0026 >> ===== RESULTS =====\n[INFO] simplereport:0035 >> output: 4 success / 0 failed\n[INFO] simplereport:0036 >> ===================\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/WORC-3.1.2-py3.7.egg/WORC/classification/SearchCV.py:665: RuntimeWarning: invalid value encountered in subtract\n  array_means[:, np.newaxis]) ** 2,\n\n\n\n#######################################\nStarting fit and score of new workflow.\nFitting scaler and transforming features.\nImputing NaN with median.\nSelecting groups of features.\nOriginal Length: 3690\nNew Length: 45\nSelecting features based on variance.\nOriginal Length: 45\nNew Length: 44\nFitting ML.\nBest found parameters:\nCNB_alpha: 0.726167980003061.\nElasticNet_alpha: 0.5198233489336938.\nElasticNet_l1_ratio: 0.5471280303196685.\nFeatsel_Variance: True.\nFeatureScaling: z_score.\nImputation: True.\nImputationMethod: median.\nImputationNeighbours: 8.\nLDA_shrinkage: 0.3392137079926855.\nLDA_solver: eigen.\nLRC: 0.8677162072835464.\nLRpenalty: l1.\nPCAType: 95variance.\nQDA_reg_param: 5.6914094357965964e-05.\nRFmax_depth: 6.\nRFmin_samples_split: 3.\nRFn_estimators: 13.\nReliefDistanceP: 3.\nReliefNN: 2.\nReliefNumFeatures: 84.\nReliefSampleSize: 1.\nReliefUse: False.\nSGD_alpha: 0.04398511701517403.\nSGD_l1_ratio: 0.3148376688289436.\nSGD_loss: modified_huber.\nSGD_penalty: l2.\nSVMC: 1.584103268086585.\nSVMKernel: poly.\nSVMcoef0: 0.3772121357263284.\nSVMdegree: 4.305350971185028.\nSVMgamma: 0.5460937655060948.\nSampleProcessing_Oversampling: False.\nSampleProcessing_SMOTE: False.\nSampleProcessing_SMOTE_n_cores: 4.\nSampleProcessing_SMOTE_neighbors: 18.\nSampleProcessing_SMOTE_ratio: 1.0.\nSelectFromModel: False.\nSelectGroups: True.\nStatisticalTestMetric: MannWhitneyU.\nStatisticalTestThreshold: 0.04341814313026648.\nStatisticalTestUse: False.\nUsePCA: False.\nclassifiers: SVM.\ncoliage_features: False.\nfractal_features: False.\nhistogram_features: True.\nlocation_features: False.\nlog_features: False.\nmax_iter: 100000.\norientation_features: False.\npatient_features: False.\nphase_features: False.\nrgrd_features: False.\nsemantic_features: False.\nshape_features: False.\ntexture_gabor_features: False.\ntexture_glcm_features: False.\ntexture_glcmms_features: False.\ntexture_gldzm_features: False.\ntexture_glrlm_features: False.\ntexture_glszm_features: False.\ntexture_lbp_features: True.\ntexture_ngldm_features: False.\ntexture_ngtdm_features: False.\nvessel_features: False.\nwavelet_features: False.\nNumber: 464.\n\n Best score using best parameters:\n0.7476190476190476\nCreating ensemble using top 1 individual classifiers.\nRefitting estimator 1 / 1.\n\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/pandas/core/generic.py:2530: PerformanceWarning: \nyour performance may suffer as PyTables will pickle object types that it cannot\nmap directly to c-types [inferred_type->mixed,key->block0_values] [items->['2ysurv']]\n\n  pytables.to_hdf(path_or_buf, key, self, **kwargs)\n\n[WORC Warning] Support for multiple label types not supported yet. Taking first label for plot_SVM.\n\n\nCross validation 1 / 3.\nTruth: [1. 0. 1. 0. 1. 1. 0. 0. 0. 0.]\nPrediction: [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]\nAUC: 0.25\n\n\nCross validation 2 / 3.\nTruth: [0. 0. 1. 0. 0. 1. 0. 1. 1. 0.]\nPrediction: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/sklearn/metrics/classification.py:1143: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.\n  'precision', 'predicted', average, warn_for)\n\nAUC: 0.5416666666666667\n\n\nCross validation 3 / 3.\nTruth: [0. 1. 0. 0. 0. 1. 1. 0. 1. 0.]\nPrediction: [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]\nAUC: 0.08333333333333331\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/scipy/stats/_distn_infrastructure.py:1983: RuntimeWarning: invalid value encountered in multiply\n  lower_bound = _a * scale + loc\n\n[WARNING]  warnings:0110 >> /home/martijn/Documents/WORC312/lib/python3.7/site-packages/scipy/stats/_distn_infrastructure.py:1984: RuntimeWarning: invalid value encountered in multiply\n  upper_bound = _b * scale + loc\n\nAlways Wrong: LUNG1-001, label 1.0.\nAlways Right: LUNG1-007, label 0.0.\nAlways Wrong: LUNG1-084, label 1.0.\nAlways Right: LUNG1-113, label 0.0.\nAlways Wrong: LUNG1-116, label 1.0.\nAlways Wrong: LUNG1-118, label 1.0.\nAlways Right: LUNG1-124, label 0.0.\nAlways Right: LUNG1-145, label 0.0.\nAlways Right: LUNG1-148, label 0.0.\nAlways Right: LUNG1-004, label 0.0.\nAlways Wrong: LUNG1-049, label 1.0.\nAlways Right: LUNG1-052, label 0.0.\nAlways Right: LUNG1-109, label 0.0.\nAlways Wrong: LUNG1-119, label 1.0.\nAlways Right: LUNG1-125, label 0.0.\nAlways Wrong: LUNG1-130, label 1.0.\nAlways Wrong: LUNG1-139, label 1.0.\nAlways Wrong: LUNG1-015, label 1.0.\nAlways Right: LUNG1-029, label 0.0.\nAlways Right: LUNG1-077, label 0.0.\nAlways Wrong: LUNG1-078, label 1.0.\nAlways Wrong: LUNG1-129, label 1.0.\nAlways Right: LUNG1-146, label 0.0.\nAlways Wrong: LUNG1-147, label 1.0.\nAUC 95%: : 0.2916666666666667 (-0.4707006991869282, 1.0540340325202615).\nAccuracy 95%: : 0.5333333333333333 (0.34360418164636014, 0.7230624850203065).\nAlways right : {'LUNG1-007': 0.0, 'LUNG1-113': 0.0, 'LUNG1-124': 0.0, 'LUNG1-145': 0.0, 'LUNG1-148': 0.0, 'LUNG1-004': 0.0, 'LUNG1-052': 0.0, 'LUNG1-109': 0.0, 'LUNG1-125': 0.0, 'LUNG1-029': 0.0, 'LUNG1-077': 0.0, 'LUNG1-146': 0.0}.\nAlways wrong : {'LUNG1-001': 1.0, 'LUNG1-084': 1.0, 'LUNG1-116': 1.0, 'LUNG1-118': 1.0, 'LUNG1-049': 1.0, 'LUNG1-119': 1.0, 'LUNG1-130': 1.0, 'LUNG1-139': 1.0, 'LUNG1-015': 1.0, 'LUNG1-078': 1.0, 'LUNG1-129': 1.0, 'LUNG1-147': 1.0}.\nBCA 95%: : 0.4444444444444445 (0.2863368180386335, 0.6025520708502554).\nF1-score 95%: : 0.4166666666666667 (0.3218020908231803, 0.511531242510153).\nNPV 95%: : 0.5703703703703703 (0.48604630295393786, 0.6546944377868028).\nPercentages : {'LUNG1-001': '1.0: 0.0%', 'LUNG1-007': '0.0: 100.0%', 'LUNG1-084': '1.0: 0.0%', 'LUNG1-113': '0.0: 100.0%', 'LUNG1-116': '1.0: 0.0%', 'LUNG1-118': '1.0: 0.0%', 'LUNG1-124': '0.0: 100.0%', 'LUNG1-145': '0.0: 100.0%', 'LUNG1-148': '0.0: 100.0%', 'LUNG1-153': '0.0: 50.0%', 'LUNG1-004': '0.0: 100.0%', 'LUNG1-032': '0.0: 50.0%', 'LUNG1-049': '1.0: 0.0%', 'LUNG1-052': '0.0: 100.0%', 'LUNG1-109': '0.0: 100.0%', 'LUNG1-119': '1.0: 0.0%', 'LUNG1-125': '0.0: 100.0%', 'LUNG1-130': '1.0: 0.0%', 'LUNG1-139': '1.0: 0.0%', 'LUNG1-015': '1.0: 0.0%', 'LUNG1-029': '0.0: 100.0%', 'LUNG1-077': '0.0: 100.0%', 'LUNG1-078': '1.0: 0.0%', 'LUNG1-129': '1.0: 0.0%', 'LUNG1-146': '0.0: 100.0%', 'LUNG1-147': '1.0: 0.0%'}.\nPrecision 95%: : 0.0 (0.0, 0.0).\nSensitivity 95%:  : 0.0 (0.0, 0.0).\nSpecificity 95%: : 0.888888888888889 (0.572673636077267, 1.2051041417005108).\nSaved data!\n",
+    "stderr": "",
+    "command": [
+      "python",
+      "/home/martijn/Documents/WORC312/lib/python3.7/site-packages/WORC-3.1.2-py3.7.egg/WORC/resources/fastr_tools/worc/bin/TrainClassifier.py",
+      "--feat_train",
+      "CT0=/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-001GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-004GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-007Region_1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-015GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-029GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-032GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-041GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-049GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-052GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-053GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-054GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-055GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-060GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-063GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-068GTV-1_2_/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-077GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-078GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-084GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-095GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-098GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-099GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-103GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-105GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-109GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-113GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-114GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-115GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-116GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-118GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-119GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-122GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-123GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-124GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-125GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-127GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-129GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-130GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-131GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-134GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-139GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-140GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-142GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-145GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-146GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-147GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-148GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-150GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-151GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-153GTV-1/result/features.hdf5,/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-156GTV-1/result/features.hdf5",
+      "--class",
+      "/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/classify/all/classification_0.hdf5",
+      "--perf",
+      "/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/classify/all/performance_0.json",
+      "--pc_train",
+      "/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result/pinfo_2y.csv",
+      "--conf",
+      "/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini"
+    ],
+    "resource_usage": [
+      {
+        "timestamp": "2019-12-09T09:11:32.439692",
+        "cpu_percent": 21.993333333333336,
+        "vmem": 2109894656,
+        "rmem": 327749632,
+        "read_bytes": 188416,
+        "write_bytes": 7876608
+      },
+      {
+        "timestamp": "2019-12-09T09:12:32.504366",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2109894656,
+        "rmem": 320643072,
+        "read_bytes": 188416,
+        "write_bytes": 7876608
+      },
+      {
+        "timestamp": "2019-12-09T09:13:32.566628",
+        "cpu_percent": 0.0,
+        "vmem": 2109894656,
+        "rmem": 320643072,
+        "read_bytes": 188416,
+        "write_bytes": 7876608
+      },
+      {
+        "timestamp": "2019-12-09T09:14:32.626370",
+        "cpu_percent": 0.0,
+        "vmem": 2109894656,
+        "rmem": 320643072,
+        "read_bytes": 188416,
+        "write_bytes": 7876608
+      },
+      {
+        "timestamp": "2019-12-09T09:15:32.688852",
+        "cpu_percent": 0.03333333333333333,
+        "vmem": 2109894656,
+        "rmem": 320753664,
+        "read_bytes": 487424,
+        "write_bytes": 9445376
+      },
+      {
+        "timestamp": "2019-12-09T09:16:32.754860",
+        "cpu_percent": 0.0,
+        "vmem": 2109894656,
+        "rmem": 320753664,
+        "read_bytes": 487424,
+        "write_bytes": 9445376
+      },
+      {
+        "timestamp": "2019-12-09T09:17:32.818085",
+        "cpu_percent": 0.0,
+        "vmem": 2109894656,
+        "rmem": 320753664,
+        "read_bytes": 487424,
+        "write_bytes": 9445376
+      },
+      {
+        "timestamp": "2019-12-09T09:18:32.883281",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2109894656,
+        "rmem": 320753664,
+        "read_bytes": 487424,
+        "write_bytes": 9445376
+      },
+      {
+        "timestamp": "2019-12-09T09:19:32.949362",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2109894656,
+        "rmem": 320753664,
+        "read_bytes": 696320,
+        "write_bytes": 11014144
+      },
+      {
+        "timestamp": "2019-12-09T09:20:33.014310",
+        "cpu_percent": 0.0,
+        "vmem": 2109894656,
+        "rmem": 320753664,
+        "read_bytes": 696320,
+        "write_bytes": 11014144
+      },
+      {
+        "timestamp": "2019-12-09T09:21:33.079079",
+        "cpu_percent": 0.0,
+        "vmem": 2109894656,
+        "rmem": 320753664,
+        "read_bytes": 696320,
+        "write_bytes": 11014144
+      },
+      {
+        "timestamp": "2019-12-09T09:22:33.144435",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2109894656,
+        "rmem": 320753664,
+        "read_bytes": 696320,
+        "write_bytes": 11014144
+      },
+      {
+        "timestamp": "2019-12-09T09:23:33.207939",
+        "cpu_percent": 0.03333333333333333,
+        "vmem": 2109894656,
+        "rmem": 320761856,
+        "read_bytes": 696320,
+        "write_bytes": 12587008
+      },
+      {
+        "timestamp": "2019-12-09T09:24:33.271136",
+        "cpu_percent": 0.0,
+        "vmem": 2109894656,
+        "rmem": 320761856,
+        "read_bytes": 696320,
+        "write_bytes": 12587008
+      },
+      {
+        "timestamp": "2019-12-09T09:25:33.334445",
+        "cpu_percent": 0.0,
+        "vmem": 2109894656,
+        "rmem": 320761856,
+        "read_bytes": 696320,
+        "write_bytes": 12587008
+      },
+      {
+        "timestamp": "2019-12-09T09:26:33.396828",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2109894656,
+        "rmem": 320761856,
+        "read_bytes": 696320,
+        "write_bytes": 12587008
+      },
+      {
+        "timestamp": "2019-12-09T09:27:33.461977",
+        "cpu_percent": 4.78,
+        "vmem": 2119843840,
+        "rmem": 338980864,
+        "read_bytes": 696320,
+        "write_bytes": 28078080
+      },
+      {
+        "timestamp": "2019-12-09T09:28:33.526768",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2114678784,
+        "rmem": 334028800,
+        "read_bytes": 696320,
+        "write_bytes": 28078080
+      },
+      {
+        "timestamp": "2019-12-09T09:29:33.593453",
+        "cpu_percent": 0.0,
+        "vmem": 2114678784,
+        "rmem": 334028800,
+        "read_bytes": 696320,
+        "write_bytes": 28078080
+      },
+      {
+        "timestamp": "2019-12-09T09:30:33.663246",
+        "cpu_percent": 0.0,
+        "vmem": 2114678784,
+        "rmem": 334028800,
+        "read_bytes": 696320,
+        "write_bytes": 28078080
+      },
+      {
+        "timestamp": "2019-12-09T09:31:33.725520",
+        "cpu_percent": 0.03333333333333333,
+        "vmem": 2114678784,
+        "rmem": 334053376,
+        "read_bytes": 733184,
+        "write_bytes": 29642752
+      },
+      {
+        "timestamp": "2019-12-09T09:32:33.786537",
+        "cpu_percent": 0.0,
+        "vmem": 2114678784,
+        "rmem": 334053376,
+        "read_bytes": 733184,
+        "write_bytes": 29642752
+      },
+      {
+        "timestamp": "2019-12-09T09:33:33.850344",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2114678784,
+        "rmem": 334053376,
+        "read_bytes": 733184,
+        "write_bytes": 29642752
+      },
+      {
+        "timestamp": "2019-12-09T09:34:33.916201",
+        "cpu_percent": 0.0,
+        "vmem": 2114678784,
+        "rmem": 334053376,
+        "read_bytes": 733184,
+        "write_bytes": 29642752
+      },
+      {
+        "timestamp": "2019-12-09T09:35:33.979794",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2114678784,
+        "rmem": 334053376,
+        "read_bytes": 733184,
+        "write_bytes": 31207424
+      },
+      {
+        "timestamp": "2019-12-09T09:36:34.039671",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2114678784,
+        "rmem": 334053376,
+        "read_bytes": 733184,
+        "write_bytes": 31207424
+      },
+      {
+        "timestamp": "2019-12-09T09:37:34.104242",
+        "cpu_percent": 0.0,
+        "vmem": 2114678784,
+        "rmem": 334053376,
+        "read_bytes": 733184,
+        "write_bytes": 31207424
+      },
+      {
+        "timestamp": "2019-12-09T09:38:34.170021",
+        "cpu_percent": 0.0,
+        "vmem": 2114678784,
+        "rmem": 334053376,
+        "read_bytes": 733184,
+        "write_bytes": 31207424
+      },
+      {
+        "timestamp": "2019-12-09T09:39:34.234785",
+        "cpu_percent": 0.03333333333333333,
+        "vmem": 2114678784,
+        "rmem": 334057472,
+        "read_bytes": 733184,
+        "write_bytes": 32763904
+      },
+      {
+        "timestamp": "2019-12-09T09:40:34.300915",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2114678784,
+        "rmem": 334057472,
+        "read_bytes": 733184,
+        "write_bytes": 32763904
+      },
+      {
+        "timestamp": "2019-12-09T09:41:34.363611",
+        "cpu_percent": 0.0,
+        "vmem": 2114678784,
+        "rmem": 334057472,
+        "read_bytes": 733184,
+        "write_bytes": 32763904
+      },
+      {
+        "timestamp": "2019-12-09T09:42:34.427429",
+        "cpu_percent": 0.03333333333333333,
+        "vmem": 2114678784,
+        "rmem": 334061568,
+        "read_bytes": 733184,
+        "write_bytes": 35827712
+      },
+      {
+        "timestamp": "2019-12-09T09:43:34.490516",
+        "cpu_percent": 4.778333333333334,
+        "vmem": 2121912320,
+        "rmem": 341061632,
+        "read_bytes": 733184,
+        "write_bytes": 48230400
+      },
+      {
+        "timestamp": "2019-12-09T09:44:34.553184",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 48230400
+      },
+      {
+        "timestamp": "2019-12-09T09:45:34.617613",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 48230400
+      },
+      {
+        "timestamp": "2019-12-09T09:46:34.680782",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 48230400
+      },
+      {
+        "timestamp": "2019-12-09T09:47:34.743751",
+        "cpu_percent": 0.03333333333333333,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 49795072
+      },
+      {
+        "timestamp": "2019-12-09T09:48:34.805370",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 49795072
+      },
+      {
+        "timestamp": "2019-12-09T09:49:34.871968",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 49795072
+      },
+      {
+        "timestamp": "2019-12-09T09:50:34.935642",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 49795072
+      },
+      {
+        "timestamp": "2019-12-09T09:51:35.002481",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 51359744
+      },
+      {
+        "timestamp": "2019-12-09T09:52:35.066184",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 51359744
+      },
+      {
+        "timestamp": "2019-12-09T09:53:35.127903",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337334272,
+        "read_bytes": 733184,
+        "write_bytes": 51359744
+      },
+      {
+        "timestamp": "2019-12-09T09:54:35.192032",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:55:35.256816",
+        "cpu_percent": 0.016666666666666666,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:35.320374",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:36.321547",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:37.322709",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:38.323771",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:39.324486",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:40.324871",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:41.326042",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:42.326518",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:43.327669",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:44.328813",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:45.329938",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:46.331019",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:47.331939",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:48.333099",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:49.334253",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:50.335406",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:51.336560",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:52.337711",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:53.338095",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:54.338526",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:55.339685",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:56.340838",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:57.342012",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:58.343168",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:56:59.344325",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:00.345484",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:01.346527",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:02.347680",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:03.348836",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:04.349960",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:05.351113",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:06.352263",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:07.352811",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:08.353958",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:09.354296",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:10.354550",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:11.355702",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:12.356849",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:13.358032",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:14.358548",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:15.359731",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:16.360886",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:17.362044",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:18.362518",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:19.363650",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:20.364795",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:21.365776",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:22.366923",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:23.368083",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:24.369237",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:25.370078",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:26.370484",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:27.371655",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:28.372825",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:29.373971",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:30.374543",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:31.375729",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:32.376873",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:33.378071",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:34.379224",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:35.380400",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:36.381519",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:37.382197",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:38.383349",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:39.384521",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:40.385671",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:41.386815",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:42.387962",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:43.389120",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:44.389954",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:45.391106",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:46.392258",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:47.393405",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:48.394509",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:49.395660",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:50.396805",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:51.397984",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:52.399142",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:53.400296",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:54.400576",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:55.401734",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:56.402546",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:57.403668",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:58.404819",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:57:59.405966",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:00.407112",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:01.407761",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:02.408907",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:03.410058",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:04.411202",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:05.412361",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:06.413512",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:07.414693",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:08.415839",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:09.416990",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:10.418145",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:11.419185",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 52928512
+      },
+      {
+        "timestamp": "2019-12-09T09:58:12.420334",
+        "cpu_percent": 2.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 54497280
+      },
+      {
+        "timestamp": "2019-12-09T09:58:13.421477",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 54497280
+      },
+      {
+        "timestamp": "2019-12-09T09:58:14.422499",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 54497280
+      },
+      {
+        "timestamp": "2019-12-09T09:58:15.423847",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 54497280
+      },
+      {
+        "timestamp": "2019-12-09T09:58:16.424994",
+        "cpu_percent": 1.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 56008704
+      },
+      {
+        "timestamp": "2019-12-09T09:58:17.426131",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 56008704
+      },
+      {
+        "timestamp": "2019-12-09T09:58:18.426513",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 56008704
+      },
+      {
+        "timestamp": "2019-12-09T09:58:19.427884",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 56008704
+      },
+      {
+        "timestamp": "2019-12-09T09:58:20.429048",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 57520128
+      },
+      {
+        "timestamp": "2019-12-09T09:58:21.430238",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 57520128
+      },
+      {
+        "timestamp": "2019-12-09T09:58:22.431433",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 57520128
+      },
+      {
+        "timestamp": "2019-12-09T09:58:23.432760",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 57520128
+      },
+      {
+        "timestamp": "2019-12-09T09:58:24.433911",
+        "cpu_percent": 2.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 59031552
+      },
+      {
+        "timestamp": "2019-12-09T09:58:25.434074",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 59031552
+      },
+      {
+        "timestamp": "2019-12-09T09:58:26.435220",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 59031552
+      },
+      {
+        "timestamp": "2019-12-09T09:58:27.436569",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337350656,
+        "read_bytes": 733184,
+        "write_bytes": 59031552
+      },
+      {
+        "timestamp": "2019-12-09T09:58:28.437921",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337354752,
+        "read_bytes": 733184,
+        "write_bytes": 60542976
+      },
+      {
+        "timestamp": "2019-12-09T09:58:29.439300",
+        "cpu_percent": 0.0,
+        "vmem": 2117615616,
+        "rmem": 337354752,
+        "read_bytes": 733184,
+        "write_bytes": 60542976
+      },
+      {
+        "timestamp": "2019-12-09T09:58:30.440456",
+        "cpu_percent": 66.9,
+        "vmem": 2125737984,
+        "rmem": 345112576,
+        "read_bytes": 733184,
+        "write_bytes": 60547072
+      },
+      {
+        "timestamp": "2019-12-09T09:58:31.441604",
+        "cpu_percent": 99.9,
+        "vmem": 2125615104,
+        "rmem": 345358336,
+        "read_bytes": 733184,
+        "write_bytes": 64897024
+      }
+    ],
+    "time_elapsed": 2879.948025226593
+  },
+  "sysinfo_end": {
+    "cpu_usage": {
+      "user": 20178.35,
+      "nice": 72.72,
+      "system": 6922.08,
+      "idle": 2599578.95,
+      "iowait": 7363.11,
+      "irq": 0.0,
+      "softirq": 141.85,
+      "steal": 0.0,
+      "guest": 0.0,
+      "guest_nice": 0.0,
+      "percent": 14.1
+    },
+    "memory_usage": {
+      "virtual": {
+        "total": 16701427712,
+        "available": 5870297088,
+        "percent": 64.9,
+        "used": 8782909440,
+        "free": 1279131648,
+        "active": 10301280256,
+        "inactive": 4132900864,
+        "buffers": 1210793984,
+        "cached": 5428592640,
+        "shared": 1701822464,
+        "slab": 652742656
+      },
+      "swap": {
+        "total": 17052987392,
+        "used": 187121664,
+        "free": 16865865728,
+        "percent": 1.1,
+        "sin": 45920256,
+        "sout": 292626432
+      }
+    },
+    "mounts": [
+      {
+        "device": "/dev/sda1",
+        "mountpoint": "/",
+        "fstype": "ext4",
+        "opts": "rw,relatime,errors=remount-ro,data=ordered",
+        "disk_total": 49080274944,
+        "disk_used": 34656251904,
+        "disk_free": 11907248128,
+        "disk_use_percent": 74.4
+      },
+      {
+        "device": "/dev/sda6",
+        "mountpoint": "/home",
+        "fstype": "ext4",
+        "opts": "rw,relatime,data=ordered",
+        "disk_total": 185904377856,
+        "disk_used": 76684361728,
+        "disk_free": 99752947712,
+        "disk_use_percent": 43.5
+      },
+      {
+        "device": "/dev/sda1",
+        "mountpoint": "/var/lib/docker/aufs",
+        "fstype": "ext4",
+        "opts": "rw,relatime,errors=remount-ro,data=ordered",
+        "disk_total": 49080274944,
+        "disk_used": 34656251904,
+        "disk_free": 11907248128,
+        "disk_use_percent": 74.4
+      },
+      {
+        "device": "/dev/sdc1",
+        "mountpoint": "/media/martijn/DATA",
+        "fstype": "fuseblk",
+        "opts": "rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096",
+        "disk_total": 2000396996608,
+        "disk_used": 1920098758656,
+        "disk_free": 80298237952,
+        "disk_use_percent": 96.0
+      }
+    ],
+    "users": [
+      {
+        "name": "martijn",
+        "terminal": "tty7",
+        "host": "localhost",
+        "started": 1575555456.0,
+        "pid": 1497
+      }
+    ]
+  }
+}

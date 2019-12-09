@@ -1,0 +1,20 @@
+{
+  "config_classification_sink": {
+    "id_0": {
+      "status": "JobState.finished",
+      "errors": []
+    }
+  },
+  "classification": {
+    "all": {
+      "status": "JobState.finished",
+      "errors": []
+    }
+  },
+  "performance": {
+    "all": {
+      "status": "JobState.finished",
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "id": "WORC_Example_Lung___features_train_CT0___Lung-LUNG1-015GTV-1",
+  "hostinfo": {
+    "os": {
+      "system": "Linux",
+      "is64bits": 1,
+      "maxsize": 9223372036854775807,
+      "version": {
+        "distname": "debian",
+        "version": "stretch/sid",
+        "id": "",
+        "libc": {
+          "libname": "glibc",
+          "version": "2.17"
+        }
+      }
+    },
+    "uname": [
+      "Linux",
+      "martijn-HP-EliteDesk-800-G2-SFF",
+      "4.4.0-170-generic",
+      "#199-Ubuntu SMP Thu Nov 14 01:45:04 UTC 2019",
+      "x86_64",
+      "x86_64"
+    ],
+    "username": "martijn",
+    "cwd": "/home/martijn/git/STWStrategyHackaton/WORCRadiomix",
+    "python": {
+      "version": "3.7.3",
+      "branch": "",
+      "compiler": "GCC 5.4.0 20160609",
+      "implementation": "CPython",
+      "revision": ""
+    },
+    "envvar": {
+      "XDG_VTNR": "7",
+      "LC_PAPER": "nl_NL.UTF-8",
+      "LC_ADDRESS": "nl_NL.UTF-8",
+      "XDG_SESSION_ID": "c2",
+      "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/martijn",
+      "LC_MONETARY": "nl_NL.UTF-8",
+      "CLUTTER_IM_MODULE": "xim",
+      "GPG_AGENT_INFO": "/home/martijn/.gnupg/S.gpg-agent:0:1",
+      "GUACAMOLE_HOME": "/home/martijn/apps/guacamolehome",
+      "TERM": "xterm-256color",
+      "VTE_VERSION": "4205",
+      "SHELL": "/bin/bash",
+      "CATALINA_HOME": "/usr/share/tomcat7",
+      "DERBY_HOME": "/usr/lib/jvm/java-8-oracle/db",
+      "QT_LINUX_ACCESSIBILITY_ALWAYS_ON": "1",
+      "WINDOWID": "98566531",
+      "LC_NUMERIC": "nl_NL.UTF-8",
+      "OLDPWD": "/home/martijn/git",
+      "UPSTART_SESSION": "unix:abstract=/com/ubuntu/upstart-session/1000/1497",
+      "GNOME_KEYRING_CONTROL": "",
+      "GTK_MODULES": "gail:atk-bridge:unity-gtk-module",
+      "USER": "martijn",
+      "JRE_HOME": "/usr/lib/jvm/java-8-oracle/jre",
+      "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+      "LC_TELEPHONE": "nl_NL.UTF-8",
+      "QT_ACCESSIBILITY": "1",
+      "LD_LIBRARY_PATH": "/home/martijn/apps/dip/Linuxa64/lib/::/home/martijn/apps/dip/Linuxa64/lib:/home/martijn/apps/elastix/lib",
+      "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+      "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+      "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+      "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+      "VIRTUAL_ENV": "/home/martijn/Documents/WORC312",
+      "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg",
+      "DESKTOP_SESSION": "ubuntu",
+      "PATH": "/home/martijn/Documents/WORC312/bin:/home/martijn/miniconda2/bin:/home/martijn/miniconda/bin:/hoem/martijn/apps/elastix/bin:/home/martijn/bin:/home/martijn/.local/bin:/opt/texbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin",
+      "QT_IM_MODULE": "ibus",
+      "QT_QPA_PLATFORMTHEME": "appmenu-qt5",
+      "LC_IDENTIFICATION": "nl_NL.UTF-8",
+      "XDG_SESSION_TYPE": "x11",
+      "PWD": "/home/martijn/git/STWStrategyHackaton/WORCRadiomix",
+      "JOB": "gnome-session",
+      "XMODIFIERS": "@im=ibus",
+      "JAVA_HOME": "/usr/lib/jvm/java-8-oracle",
+      "GNOME_KEYRING_PID": "",
+      "LANG": "en_US.UTF-8",
+      "GDM_LANG": "en_US",
+      "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+      "LC_MEASUREMENT": "nl_NL.UTF-8",
+      "COMPIZ_CONFIG_PROFILE": "ubuntu",
+      "IM_CONFIG_PHASE": "1",
+      "PS1": "(WORC312) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ ",
+      "GDMSESSION": "ubuntu",
+      "SESSIONTYPE": "gnome-session",
+      "GTK2_MODULES": "overlay-scrollbar",
+      "SHLVL": "1",
+      "HOME": "/home/martijn",
+      "XDG_SEAT": "seat0",
+      "LANGUAGE": "en_US",
+      "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+      "UPSTART_INSTANCE": "",
+      "PYTHONPATH": ":/home/martijn/git/PySNAP:/home/taskman/taskmanager/taskmanager/taskmanager:/home/taskman/taskmanager/taskmanager/taskmanager:/home/martijn/git/Taskclient:/home/martijn/git/RadTools:/media/martijn/DATA/Software/caffe-master/python:/home/martijn/git/DicomSorter:/home/martijn/git/XNATExplorer:/home/martijn/git/imgaug:/home/martijn/git/phasepack:/home/martijn/git/PREDICTFastr/PREDICT:/home/martijn/git/DicomSorter",
+      "UPSTART_EVENTS": "started starting",
+      "XDG_SESSION_DESKTOP": "ubuntu",
+      "LOGNAME": "martijn",
+      "DBUS_SESSION_BUS_ADDRESS": "unix:abstract=/tmp/dbus-4zHnmvJLFG",
+      "J2SDKDIR": "/usr/lib/jvm/java-8-oracle",
+      "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop",
+      "QT4_IM_MODULE": "xim",
+      "LESSOPEN": "| /usr/bin/lesspipe %s",
+      "INSTANCE": "Unity",
+      "UPSTART_JOB": "unity-settings-daemon",
+      "XDG_RUNTIME_DIR": "/run/user/1000",
+      "DISPLAY": ":0",
+      "XDG_CURRENT_DESKTOP": "Unity",
+      "GTK_IM_MODULE": "ibus",
+      "J2REDIR": "/usr/lib/jvm/java-8-oracle/jre",
+      "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+      "LC_TIME": "nl_NL.UTF-8",
+      "LC_NAME": "nl_NL.UTF-8",
+      "XAUTHORITY": "/home/martijn/.Xauthority",
+      "_": "/home/martijn/Documents/WORC312/bin/python",
+      "KMP_INIT_AT_FORK": "FALSE"
+    },
+    "drmaa": {
+      "jobid": null,
+      "taskid": null,
+      "jobname": null
+    }
+  },
+  "sysinfo_start": {
+    "cpu_usage": {
+      "user": 17041.03,
+      "nice": 72.66,
+      "system": 6567.67,
+      "idle": 2578542.34,
+      "iowait": 7321.26,
+      "irq": 0.0,
+      "softirq": 137.9,
+      "steal": 0.0,
+      "guest": 0.0,
+      "guest_nice": 0.0,
+      "percent": 21.3
+    },
+    "memory_usage": {
+      "virtual": {
+        "total": 16701427712,
+        "available": 6351712256,
+        "percent": 62.0,
+        "used": 8359563264,
+        "free": 266760192,
+        "active": 10455478272,
+        "inactive": 4978454528,
+        "buffers": 1699037184,
+        "cached": 6376067072,
+        "shared": 1643753472,
+        "slab": 675729408
+      },
+      "swap": {
+        "total": 17052987392,
+        "used": 118198272,
+        "free": 16934789120,
+        "percent": 0.7,
+        "sin": 45920256,
+        "sout": 223703040
+      }
+    },
+    "mounts": [
+      {
+        "device": "/dev/sda1",
+        "mountpoint": "/",
+        "fstype": "ext4",
+        "opts": "rw,relatime,errors=remount-ro,data=ordered",
+        "disk_total": 49080274944,
+        "disk_used": 34656153600,
+        "disk_free": 11907346432,
+        "disk_use_percent": 74.4
+      },
+      {
+        "device": "/dev/sda6",
+        "mountpoint": "/home",
+        "fstype": "ext4",
+        "opts": "rw,relatime,data=ordered",
+        "disk_total": 185904377856,
+        "disk_used": 76664053760,
+        "disk_free": 99773255680,
+        "disk_use_percent": 43.5
+      },
+      {
+        "device": "/dev/sda1",
+        "mountpoint": "/var/lib/docker/aufs",
+        "fstype": "ext4",
+        "opts": "rw,relatime,errors=remount-ro,data=ordered",
+        "disk_total": 49080274944,
+        "disk_used": 34656153600,
+        "disk_free": 11907346432,
+        "disk_use_percent": 74.4
+      },
+      {
+        "device": "/dev/sdc1",
+        "mountpoint": "/media/martijn/DATA",
+        "fstype": "fuseblk",
+        "opts": "rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096",
+        "disk_total": 2000396996608,
+        "disk_used": 1920098758656,
+        "disk_free": 80298237952,
+        "disk_use_percent": 96.0
+      }
+    ],
+    "users": [
+      {
+        "name": "martijn",
+        "terminal": "tty7",
+        "host": "localhost",
+        "started": 1575555456.0,
+        "pid": 1497
+      }
+    ]
+  },
+  "process": {
+    "return_code": 0,
+    "stdout": "[WARNING]  __init__:0078 >> Not running in a production installation (branch \"develop\" from source code)\n[INFO]    source:0047 >> Using Python version 3.7.3 (default, Apr 24 2019, 10:44:57) \n[GCC 5.4.0 20160609] loaded from /home/martijn/Documents/WORC312/bin/python\n[INFO]    source:0052 >> Arguments:\ninput: ['file:///tmp/Radiomix_features/Lung-LUNG1-015GTV-1/features.hdf5']\noutput: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-015GTV-1/result\ndatatype: HDF5\nsample_id: Lung-LUNG1-015GTV-1\n[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py\nFastrOptionalModuleNotAvailableError from /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py line 46: Could not import the required elasticsearch for this plugin\n[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/targetplugins/singularitytarget.py\nCould not find executable \"singularity\" on PATH: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd', '/home/martijn/Documents/WORC312/bin', '/home/martijn/miniconda2/bin', '/home/martijn/miniconda/bin', '/hoem/martijn/apps/elastix/bin', '/home/martijn/bin', '/home/martijn/.local/bin', '/opt/texbin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin']\n[INFO]  ioplugin:0275 >> Skipping original file file:///tmp/Radiomix_features/Lung-LUNG1-015GTV-1/features.hdf5 -> /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-015GTV-1/result/features.hdf5\n[INFO]  ioplugin:0304 >> Got provenance file for file:///tmp/Radiomix_features/Lung-LUNG1-015GTV-1/features.hdf5\n__IOPLUGIN_OUT__={\"Lung-LUNG1-015GTV-1\": [\"/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-015GTV-1/result/features.hdf5\"]}\n",
+    "stderr": "",
+    "command": [
+      "/home/martijn/Documents/WORC312/bin/python",
+      "/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd/source.py",
+      "--input",
+      "file:///tmp/Radiomix_features/Lung-LUNG1-015GTV-1/features.hdf5",
+      "--datatype",
+      "HDF5",
+      "--output",
+      "/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/features_train_CT0/Lung-LUNG1-015GTV-1/result",
+      "--sample_id",
+      "Lung-LUNG1-015GTV-1"
+    ],
+    "resource_usage": [
+      {
+        "timestamp": "2019-12-09T09:07:17.285873",
+        "cpu_percent": 98.9,
+        "vmem": 189583360,
+        "rmem": 76234752,
+        "read_bytes": 0,
+        "write_bytes": 4096
+      }
+    ],
+    "time_elapsed": 1.4405055046081543
+  },
+  "sysinfo_end": {
+    "cpu_usage": {
+      "user": 17042.75,
+      "nice": 72.66,
+      "system": 6568.3,
+      "idle": 2578557.24,
+      "iowait": 7321.29,
+      "irq": 0.0,
+      "softirq": 137.9,
+      "steal": 0.0,
+      "guest": 0.0,
+      "guest_nice": 0.0,
+      "percent": 13.6
+    },
+    "memory_usage": {
+      "virtual": {
+        "total": 16701427712,
+        "available": 6331465728,
+        "percent": 62.1,
+        "used": 8367874048,
+        "free": 246484992,
+        "active": 10460540928,
+        "inactive": 4990406656,
+        "buffers": 1699037184,
+        "cached": 6388031488,
+        "shared": 1655689216,
+        "slab": 675737600
+      },
+      "swap": {
+        "total": 17052987392,
+        "used": 118198272,
+        "free": 16934789120,
+        "percent": 0.7,
+        "sin": 45920256,
+        "sout": 223703040
+      }
+    },
+    "mounts": [
+      {
+        "device": "/dev/sda1",
+        "mountpoint": "/",
+        "fstype": "ext4",
+        "opts": "rw,relatime,errors=remount-ro,data=ordered",
+        "disk_total": 49080274944,
+        "disk_used": 34656153600,
+        "disk_free": 11907346432,
+        "disk_use_percent": 74.4
+      },
+      {
+        "device": "/dev/sda6",
+        "mountpoint": "/home",
+        "fstype": "ext4",
+        "opts": "rw,relatime,data=ordered",
+        "disk_total": 185904377856,
+        "disk_used": 76664082432,
+        "disk_free": 99773227008,
+        "disk_use_percent": 43.5
+      },
+      {
+        "device": "/dev/sda1",
+        "mountpoint": "/var/lib/docker/aufs",
+        "fstype": "ext4",
+        "opts": "rw,relatime,errors=remount-ro,data=ordered",
+        "disk_total": 49080274944,
+        "disk_used": 34656153600,
+        "disk_free": 11907346432,
+        "disk_use_percent": 74.4
+      },
+      {
+        "device": "/dev/sdc1",
+        "mountpoint": "/media/martijn/DATA",
+        "fstype": "fuseblk",
+        "opts": "rw,nosuid,nodev,relatime,user_id=0,group_id=0,default_permissions,allow_other,blksize=4096",
+        "disk_total": 2000396996608,
+        "disk_used": 1920098758656,
+        "disk_free": 80298237952,
+        "disk_use_percent": 96.0
+      }
+    ],
+    "users": [
+      {
+        "name": "martijn",
+        "terminal": "tty7",
+        "host": "localhost",
+        "started": 1575555456.0,
+        "pid": 1497
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+=== Loading Fastr execution script  ===
+Using python 3.7.3 (default, Apr 24 2019, 10:44:57) 
+[GCC 5.4.0 20160609] loaded from /home/martijn/Documents/WORC312/bin/python
+[WARNING]  __init__:0078 >> Not running in a production installation (branch "develop" from source code)
+[INFO] executionscript:0146 >> ----- Execution script -----
+
+[INFO] executionscript:0158 >> Loading pickled command from file
+[INFO] executionscript:0162 >> Finished loading pickle in 0.043097 seconds
+[INFO] executionscript:0174 >> Received command: <SinkJob
+  id=WORC_Example_Lung___config_classification_sink___id_0___0
+  tmpdir=vfs://home/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_sink/id_0_0/>
+
+[INFO] executionscript:0055 >> Using Python 3.7.3 (default, Apr 24 2019, 10:44:57) 
+[GCC 5.4.0 20160609]
+[INFO] executionscript:0056 >> FASTR loaded from /home/martijn/Documents/WORC312/src/fastr/fastr/__init__.py
+[INFO] executionscript:0057 >> version: 3.1.4_develop_8c7db39
+[INFO] executionscript:0058 >> Start time: 2019-12-09 10:10:27.399234
+[INFO] executionscript:0061 >> Job log path: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_sink/id_0_0/__fastr_result__.pickle.gz
+[INFO] executionscript:0063 >> Running job WORC_Example_Lung___config_classification_sink___id_0___0
+  command: fastr/Sink:1.0 v1.0
+  arguments: {'input': <SampleItem index=(0), id=id_0>, 'output': (<String: 'vfs://output/WORC_Example_Lung/config_{sample_id}_{cardinality}{ext}'>,), 'datatype': (<String: 'ParameterFile'>,)}
+  outputs: {}
+
+[INFO] executionscript:0073 >> No old result, executing job
+[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py
+FastrOptionalModuleNotAvailableError from /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py line 46: Could not import the required elasticsearch for this plugin
+[INFO] executionscript:0082 >> DRMAA info: {'jobid': None, 'taskid': None, 'jobname': None}
+[INFO] executionscript:0084 >> Writing intermediate job info to: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_sink/id_0_0/__fastr_result__.pickle.gz
+[INFO]       job:0663 >> Set current directory to job output dir /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_sink/id_0_0
+[INFO]       job:0678 >> Start executing tool
+[INFO]       job:1135 >> Temp payload: {'inputs': {'input': (<ParameterFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini'>,), 'output': (<String: 'vfs://output/WORC_Example_Lung/config_{sample_id}_{cardinality}{ext}'>,), 'datatype': (<String: 'ParameterFile'>,)}, 'outputs': {}}
+[INFO]       job:1136 >> Input data: (<ParameterFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini'>,)
+[INFO]       job:1137 >> Input arguments: <SampleValue {0: (<Deferred: <ParameterFile: 'vfs://home/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini'>>,)}>
+[INFO]       job:1154 >> Checking [<DataType: Deferred class [Loaded]>] vfs://home/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini (<Deferred: <ParameterFile: 'vfs://home/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini'>>)
+[INFO]       job:1181 >> Extra inputs: [<JsonFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/__fastr_prov__.json'>]  Extra outputs: ['vfs://output/WORC_Example_Lung/config_id_0_0_ini.prov.json']
+[INFO]       job:0682 >> Finished creating payload in 0.000613 seconds
+[INFO]       job:0685 >> Start executing tool
+[INFO] localbinarytarget:0154 >> Changing ../../utils/cmd/
+[INFO]      tool:0387 >> Target is <Plugin: LocalBinaryTarget>
+[INFO]      tool:0396 >> Using payload: {'inputs': {'input': (<ParameterFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini'>, <JsonFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/__fastr_prov__.json'>), 'output': ('vfs://output/WORC_Example_Lung/config_id_0_0.ini', 'vfs://output/WORC_Example_Lung/config_id_0_0_ini.prov.json'), 'datatype': (<String: 'ParameterFile'>, <String: 'JsonFile'>)}, 'outputs': {}}
+[INFO] localbinarytarget:0202 >> Adding extra PATH: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd']
+[INFO] fastrinterface:0470 >> Execution payload: {'inputs': {'input': (<ParameterFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini'>, <JsonFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/__fastr_prov__.json'>), 'output': ('vfs://output/WORC_Example_Lung/config_id_0_0.ini', 'vfs://output/WORC_Example_Lung/config_id_0_0_ini.prov.json'), 'datatype': (<String: 'ParameterFile'>, <String: 'JsonFile'>)}, 'outputs': {}}
+[INFO] fastrinterface:0567 >> Adding (<ParameterFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini'>, <JsonFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/__fastr_prov__.json'>) to argument list based on <fastrinterface.InputParameterDescription object at 0x7f8cd5e2f828>
+[INFO] fastrinterface:0567 >> Adding ('vfs://output/WORC_Example_Lung/config_id_0_0.ini', 'vfs://output/WORC_Example_Lung/config_id_0_0_ini.prov.json') to argument list based on <fastrinterface.InputParameterDescription object at 0x7f8cd5e2fdd8>
+[INFO] fastrinterface:0567 >> Adding (<String: 'ParameterFile'>, <String: 'JsonFile'>) to argument list based on <fastrinterface.InputParameterDescription object at 0x7f8cd5e2f0b8>
+[INFO] localbinarytarget:0261 >> Options: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd']
+[INFO]    target:0184 >> Calling command arguments: ['/home/martijn/Documents/WORC312/bin/python', '/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd/sink.py', '--input', '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini', '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/__fastr_prov__.json', '--output', 'vfs://output/WORC_Example_Lung/config_id_0_0.ini', 'vfs://output/WORC_Example_Lung/config_id_0_0_ini.prov.json', '--datatype', 'ParameterFile', 'JsonFile']
+[INFO]    target:0188 >> Calling command: /home/martijn/Documents/WORC312/bin/python /home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd/sink.py --input /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/result/config_WORC_Example_Lung_0.ini /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_source/id_0/__fastr_prov__.json --output vfs://output/WORC_Example_Lung/config_id_0_0.ini vfs://output/WORC_Example_Lung/config_id_0_0_ini.prov.json --datatype ParameterFile JsonFile
+[INFO] fastrinterface:0477 >> Collecting results
+[INFO]       job:0689 >> Finished executing tool in 2.018129 seconds
+[INFO]       job:0709 >> Start translating results tool
+[INFO]       job:0713 >> Finished translating results in 4e-05 seconds
+[INFO]       job:0719 >> Resetting current directory to /home/martijn/git/STWStrategyHackaton/WORCRadiomix
+[INFO] executionscript:0090 >> Job subprocess finished
+[INFO] executionscript:0093 >> Start hashing results
+[INFO] executionscript:0097 >> Finished hashing results in 2.1e-05 seconds
+[INFO] executionscript:0098 >> try end time: 2019-12-09 10:10:30.273250
+[INFO] executionscript:0121 >> Execution finished normally.
+[INFO] executionscript:0124 >> Writing job result to: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/config_classification_sink/id_0_0/__fastr_result__.pickle.gz
+[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/targetplugins/singularitytarget.py
+Could not find executable "singularity" on PATH: ['/home/martijn/Documents/WORC312/bin', '/home/martijn/miniconda2/bin', '/home/martijn/miniconda/bin', '/hoem/martijn/apps/elastix/bin', '/home/martijn/bin', '/home/martijn/.local/bin', '/opt/texbin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin']
+[INFO] executionscript:0133 >> End time: 2019-12-09 10:10:30.434038
+[INFO] executionscript:0181 >> ---------------------------
+

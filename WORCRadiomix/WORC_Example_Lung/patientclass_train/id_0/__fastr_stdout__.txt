@@ -1,0 +1,67 @@
+=== Loading Fastr execution script  ===
+Using python 3.7.3 (default, Apr 24 2019, 10:44:57) 
+[GCC 5.4.0 20160609] loaded from /home/martijn/Documents/WORC312/bin/python
+[WARNING]  __init__:0078 >> Not running in a production installation (branch "develop" from source code)
+[INFO] executionscript:0146 >> ----- Execution script -----
+
+[INFO] executionscript:0158 >> Loading pickled command from file
+[INFO] executionscript:0162 >> Finished loading pickle in 0.050863 seconds
+[INFO] executionscript:0174 >> Received command: <SourceJob
+  id=WORC_Example_Lung___patientclass_train___id_0
+  tmpdir=vfs://home/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/>
+
+[INFO] executionscript:0055 >> Using Python 3.7.3 (default, Apr 24 2019, 10:44:57) 
+[GCC 5.4.0 20160609]
+[INFO] executionscript:0056 >> FASTR loaded from /home/martijn/Documents/WORC312/src/fastr/fastr/__init__.py
+[INFO] executionscript:0057 >> version: 3.1.4_develop_8c7db39
+[INFO] executionscript:0058 >> Start time: 2019-12-09 10:06:59.122307
+[INFO] executionscript:0061 >> Job log path: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/__fastr_result__.pickle.gz
+[INFO] executionscript:0063 >> Running job WORC_Example_Lung___patientclass_train___id_0
+  command: fastr/Source:1.0 v1.0
+  arguments: {'input': ('file:///home/martijn/git/STWStrategyHackaton/WORCRadiomix/Data/pinfo_2y.csv',), 'datatype': (<String: 'PatientInfoFile'>,), 'sample_id': (<String: 'id_0'>,), 'targetdir': (<Directory: 'vfs://home/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result'>,)}
+  outputs: {'output': {'id': 'output', 'cardinality': 'any', 'datatype': 'PatientInfoFile', 'requested': True}}
+
+[INFO] executionscript:0073 >> No old result, executing job
+[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py
+FastrOptionalModuleNotAvailableError from /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/reportingplugins/elasticsearchreporter.py line 46: Could not import the required elasticsearch for this plugin
+[INFO] executionscript:0082 >> DRMAA info: {'jobid': None, 'taskid': None, 'jobname': None}
+[INFO] executionscript:0084 >> Writing intermediate job info to: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/__fastr_result__.pickle.gz
+[INFO]       job:0663 >> Set current directory to job output dir /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0
+[INFO]       job:0678 >> Start executing tool
+[INFO]       job:0682 >> Finished creating payload in 0.000182 seconds
+[INFO]       job:0685 >> Start executing tool
+[INFO] localbinarytarget:0154 >> Changing ../../utils/cmd/
+[INFO]      tool:0387 >> Target is <Plugin: LocalBinaryTarget>
+[INFO]      tool:0396 >> Using payload: {'inputs': {'input': ('file:///home/martijn/git/STWStrategyHackaton/WORCRadiomix/Data/pinfo_2y.csv',), 'datatype': (<String: 'PatientInfoFile'>,), 'sample_id': (<String: 'id_0'>,), 'targetdir': (<Directory: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result'>,)}, 'outputs': {'output': (<Boolean: True>,)}}
+[INFO] localbinarytarget:0202 >> Adding extra PATH: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd']
+[INFO] fastrinterface:0470 >> Execution payload: {'inputs': {'input': ('file:///home/martijn/git/STWStrategyHackaton/WORCRadiomix/Data/pinfo_2y.csv',), 'datatype': (<String: 'PatientInfoFile'>,), 'sample_id': (<String: 'id_0'>,), 'targetdir': (<Directory: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result'>,)}, 'outputs': {'output': (<Boolean: True>,)}}
+[INFO] fastrinterface:0567 >> Adding ('file:///home/martijn/git/STWStrategyHackaton/WORCRadiomix/Data/pinfo_2y.csv',) to argument list based on <fastrinterface.InputParameterDescription object at 0x7f3f122b1ac8>
+[INFO] fastrinterface:0567 >> Adding (<String: 'PatientInfoFile'>,) to argument list based on <fastrinterface.InputParameterDescription object at 0x7f3f1d9ada90>
+[INFO] fastrinterface:0567 >> Adding (<Directory: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result'>,) to argument list based on <fastrinterface.InputParameterDescription object at 0x7f3f12274898>
+[INFO] fastrinterface:0567 >> Adding (<String: 'id_0'>,) to argument list based on <fastrinterface.InputParameterDescription object at 0x7f3f122744e0>
+[INFO] fastrinterface:0567 >> Adding (<Boolean: True>,) to argument list based on <fastrinterface.OutputParameterDescription object at 0x7f3f12274048>
+[INFO] localbinarytarget:0261 >> Options: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd']
+[INFO]    target:0184 >> Calling command arguments: ['/home/martijn/Documents/WORC312/bin/python', '/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd/source.py', '--input', 'file:///home/martijn/git/STWStrategyHackaton/WORCRadiomix/Data/pinfo_2y.csv', '--datatype', 'PatientInfoFile', '--output', '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result', '--sample_id', 'id_0']
+[INFO]    target:0188 >> Calling command: /home/martijn/Documents/WORC312/bin/python /home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd/source.py --input file:///home/martijn/git/STWStrategyHackaton/WORCRadiomix/Data/pinfo_2y.csv --datatype PatientInfoFile --output /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result --sample_id id_0
+[INFO] fastrinterface:0477 >> Collecting results
+[INFO] basepluginmanager:0078 >> Could not load plugin file /home/martijn/Documents/WORC312/src/fastr/fastr/resources/plugins/targetplugins/singularitytarget.py
+Could not find executable "singularity" on PATH: ['/home/martijn/Documents/WORC312/src/fastr/fastr/utils/cmd', '/home/martijn/Documents/WORC312/bin', '/home/martijn/miniconda2/bin', '/home/martijn/miniconda/bin', '/hoem/martijn/apps/elastix/bin', '/home/martijn/bin', '/home/martijn/.local/bin', '/opt/texbin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/lib/jvm/java-8-oracle/bin', '/usr/lib/jvm/java-8-oracle/db/bin', '/usr/lib/jvm/java-8-oracle/jre/bin']
+[INFO] jsoncollector:0076 >> Setting data for output with {"id_0": ["/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result/pinfo_2y.csv"]}
+[INFO] fastrinterface:0588 >> Collected automatic result for output
+[INFO] fastrinterface:0589 >> {'id_0': ['/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result/pinfo_2y.csv']}
+[INFO]       job:0689 >> Finished executing tool in 2.168564 seconds
+[INFO]       job:0709 >> Start translating results tool
+[INFO]       job:0803 >> Trying to cast /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result/pinfo_2y.csv to one of (<URLType: PatientInfoFile class [Loaded]>,)
+[INFO]       job:0808 >> Successfully cast to <PatientInfoFile: '/home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/result/pinfo_2y.csv'>
+[INFO]       job:0713 >> Finished translating results in 0.001144 seconds
+[INFO]       job:0719 >> Resetting current directory to /home/martijn/git/STWStrategyHackaton/WORCRadiomix
+[INFO]       job:1048 >> Data for output output is valid
+[INFO] executionscript:0090 >> Job subprocess finished
+[INFO] executionscript:0093 >> Start hashing results
+[INFO] executionscript:0097 >> Finished hashing results in 0.000604 seconds
+[INFO] executionscript:0098 >> try end time: 2019-12-09 10:07:02.132715
+[INFO] executionscript:0121 >> Execution finished normally.
+[INFO] executionscript:0124 >> Writing job result to: /home/martijn/git/STWStrategyHackaton/WORCRadiomix/WORC_Example_Lung/patientclass_train/id_0/__fastr_result__.pickle.gz
+[INFO] executionscript:0133 >> End time: 2019-12-09 10:07:02.153068
+[INFO] executionscript:0181 >> ---------------------------
+
